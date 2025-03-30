@@ -1,0 +1,20 @@
+{
+    "Log Level Counts": {
+        "INFO": 6,
+        "ERROR": 3,
+        "WARN": 2,
+        "DEBUG": 1
+    },
+    "Service Counts": {
+        "ServiceA": 3,
+        "ServiceB": 4,
+        "ServiceC": 2,
+        "ServiceD": 1,
+        "???": 1,
+        "ServiceE": 1
+    },
+    "Most Common Error": {
+        "message": "Null pointer exception",
+        "count": 2
+    }
+}
