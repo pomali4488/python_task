@@ -1,10 +1,10 @@
-`Log Analyzer`
+**Log Analyzer**
 
-Overview
+`Overview`
 
 The Log Analyzer script (log_analyzer.py) reads and processes log files, extracting key information such as timestamps, service names, log levels, and messages. It aggregates log statistics and provides insights into log levels, service activity, and common error messages. The output can be printed to the console, saved as a JSON file.
 
-Features
+`Features`
 
 Parses log files line by line.
 
@@ -20,7 +20,7 @@ Message
 
 Handles malformed log lines gracefully by logging warnings.
 
-Aggregates statistics:
+`Aggregates statistics:`
 
 Count of log levels (e.g., how many ERROR messages).
 
@@ -34,7 +34,7 @@ Saves the summary to both JSON and CSV files.
 
 Provides an optional function to filter logs by a specific date range.
 
-Requirements
+`Requirements`
 
 Python 3.x
 
@@ -42,7 +42,7 @@ Usage
 
 Place your log file (app.log) in the same directory as log_analyzer.py.
 
-Run the script:
+`Run the script:`
 
 python log_analyzer.py
 
@@ -53,7 +53,7 @@ Print a summary of log statistics to the console.
 Save the summary to log_summary.json.
 
 
-Output
+`Output`
 
 Console Output (Example):
 
@@ -63,13 +63,13 @@ Console Output (Example):
     "Most Common Error": {"message": "Null pointer exception", "count": 2}
 }
 
-Generated Files:
+`Generated Files:`
 
 log_summary.json (Formatted JSON summary)
 
 
 
-Error Handling
+`Error Handling`
 
 Malformed log lines are skipped with a warning message.
 
