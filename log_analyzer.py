@@ -75,19 +75,6 @@ def save_summary_json(summary, output_path):
         json.dump(summary, json_file, indent=4)
 
 
-def filter_logs_by_date(log_data, start_date, end_date):
-    """Filters logs between a given date range."""
-    filtered_logs = []
-    for entry in log_data:
-        if entry["timestamp"] == "N/A":
-            continue
-
-        log_date = datetime.strptime(entry["timestamp"], "%Y-%m-%d %H:%M:%S")
-        if start_date <= log_date <= end_date:
-            filtered_logs.append(entry)
-    return filtered_logs
-
-
 def main():
     """Main execution function."""
     log_data, log_level_count, service_count, error_messages = parse_log_file(LOG_FILE_PATH)
